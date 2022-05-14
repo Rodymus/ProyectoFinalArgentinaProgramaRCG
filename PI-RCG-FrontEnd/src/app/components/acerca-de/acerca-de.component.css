@@ -1,0 +1,36 @@
+div {
+  background-color: #56CCF2;
+  text-align: center;
+}
+.row {
+  padding: 20px;
+}
+
+/* */
+#nombre {
+  font-weight: bold;
+  margin-top: 5%;
+
+}
+
+@media (min-width: 576px){
+  #foto-perfil {
+    position: absolute;
+    width: 25%;
+    border-radius: 100%;
+    box-shadow: 5px 5px 5px grey;
+    left: 1%;
+    top: 390px;
+  }
+
+@media (max-width: 576px){
+   #foto-perfil {
+     position: absolute;
+     width: 30%;
+     border-radius: 100%;
+     box-shadow: 3px 3px 3px grey;
+     left: 33%;
+     top: 400px;
+  }
+}
+}
