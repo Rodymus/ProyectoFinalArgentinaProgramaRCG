@@ -34,7 +34,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClient,
+    HttpClientModule,
     // Specify ng-circle-progress as an import
     NgCircleProgressModule.forRoot({
       // set defaults here
