@@ -15,7 +15,7 @@ import { EducacionComponent } from './components/educacion/educacion.component';
 import { HysComponent } from './components/hys/hys.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import {HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -43,7 +43,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
       innerStrokeWidth: 8,
       outerStrokeColor: "#78C000",
       innerStrokeColor: "#C7E596",
-      animationDuration: 300,
+      animationDuration: 300
     })
   ],
   providers: [],

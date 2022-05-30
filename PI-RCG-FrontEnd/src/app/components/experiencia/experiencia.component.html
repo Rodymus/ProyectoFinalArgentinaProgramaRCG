@@ -1,24 +1,22 @@
 <div class="row">
-  <h1>Experiencia Laboral</h1>
+  <h3>Experiencia Laboral</h3>
   <div class="col-lg-1"></div>
   <div class="col-lg-11">
-    <ul>
-      <li>
-        <h1>Trabajo 1</h1> <h3> años</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae dicta error voluptas aspernatur. Iusto eaque ab hic, odio vitae quasi cumque saepe eum. Totam nisi quas esse sapiente atque magnam</p>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <h1>Trabajo 2</h1> <h3> años</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae dicta error voluptas aspernatur. Iusto eaque ab hic, odio vitae quasi cumque saepe eum. Totam nisi quas esse sapiente atque magnam</p>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <h1>Trabajo 3</h1> <h3> años</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae dicta error voluptas aspernatur. Iusto eaque ab hic, odio vitae quasi cumque saepe eum. Totam nisi quas esse sapiente atque magnam</p>
-      </li>
-    </ul>
+    <table>
+      <tbody>
+        <tr *ngFor="let experiencia of listExperiencia; let i = index">
+          <td>{{experiencia.fecha}}</td>
+          <td>{{experiencia.empresa}}</td>
+          <td>{{experiencia.puesto}}</td>
+          <td>{{experiencia.descripcion}}</td>
+          <td>
+            <i class="fa-solid fa-pen-to-square"></i>
+          </td>
+          <td>
+            <i (click)="eliminarExperiencia(i)" class="fa-solid fa-trash text-danger"></i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>

@@ -4,6 +4,10 @@
 div {
   background-color: #20BDFF;
 }
-h1, h3 {
+h1, h2, h3 {
   display: inline;
+}
+
+.fa {
+  cursor: pointer;
 }

@@ -1,24 +1,24 @@
 <div class="row">
-  <h1>Educación</h1>
+  <h3>Educación</h3>
   <div class="col-lg-1"></div>
   <div class="col-lg-11">
-    <ul>
-      <li>
-        <h1>Trabajo 1</h1> <h3> años</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae dicta error voluptas aspernatur. Iusto eaque ab hic, odio vitae quasi cumque saepe eum. Totam nisi quas esse sapiente atque magnam</p>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <h1>Trabajo 2</h1> <h3> años</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae dicta error voluptas aspernatur. Iusto eaque ab hic, odio vitae quasi cumque saepe eum. Totam nisi quas esse sapiente atque magnam</p>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <h1>Trabajo 3</h1> <h3> años</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae dicta error voluptas aspernatur. Iusto eaque ab hic, odio vitae quasi cumque saepe eum. Totam nisi quas esse sapiente atque magnam</p>
-      </li>
-    </ul>
+    <table>
+      <tbody>
+        <tr *ngFor="let educacion of listEducacion; let i = index">
+          <td>{{educacion.fecha}}</td>
+          <td>{{educacion.escuela}}</td>
+          <td>{{educacion.titulo}}</td>
+          <td>{{educacion.descripcion}}</td>
+          <td>
+            <i class="fa-solid fa-pen-to-square"></i>
+          </td>
+          <td>
+            <i (click)="eliminarEducacion(i)" class="fa-solid fa-trash text-danger"></i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
+
+
