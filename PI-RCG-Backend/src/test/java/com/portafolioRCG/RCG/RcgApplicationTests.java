@@ -1,4 +1,4 @@
-package com.portafolioRCG.RCG;
+package com.portafoliorcg.rcg;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
