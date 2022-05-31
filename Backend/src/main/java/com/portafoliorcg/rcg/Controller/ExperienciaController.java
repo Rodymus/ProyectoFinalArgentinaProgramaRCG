@@ -4,6 +4,7 @@ import com.portafoliorcg.rcg.Entity.Experiencia;
 import com.portafoliorcg.rcg.Interface.IExperienciaService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,10 +15,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 public class ExperienciaController {
     @Autowired IExperienciaService iexperienciaService;
     
-    @GetMapping("experiencia/traer")
+    @GetMapping("/experiencia/traer")
     public List<Experiencia> getEperiencia(){
     return iexperienciaService.getExperiencia();
     }
@@ -55,5 +57,9 @@ public class ExperienciaController {
          
           } 
     
+    @GetMapping("/experiencia/traer/perfil")
+    public Experiencia findExperiencia(){
+        return iexperienciaService.findExperiencia((long)1);
+    }
     
 }

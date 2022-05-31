@@ -9,8 +9,9 @@ import javax.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
 
-@Entity
+
 @Getter @Setter
+@Entity
 public class Educacion {
   
   @Id
